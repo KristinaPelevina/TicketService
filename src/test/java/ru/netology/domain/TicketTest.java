@@ -6,6 +6,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class TicketTest {
     private Ticket first = new Ticket(1, 10000, "OMS", "DME", 205);
     private Ticket second = new Ticket(2, 7000, "OMS", "OVB", 205);

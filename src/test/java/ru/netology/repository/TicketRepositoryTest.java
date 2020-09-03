@@ -8,6 +8,7 @@ import ru.netology.manager.TicketManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class TicketRepositoryTest {
     private TicketRepository repository = new TicketRepository();
     private Ticket first = new Ticket(1, 7000, "OMS", "DME", 205);
