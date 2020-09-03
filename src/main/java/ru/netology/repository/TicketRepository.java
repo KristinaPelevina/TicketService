@@ -3,6 +3,7 @@ package ru.netology.repository;
 import ru.netology.domain.Ticket;
 import ru.netology.exception.NotFoundException;
 
+
 public class TicketRepository {
     private Ticket[] items = new Ticket[0];
 

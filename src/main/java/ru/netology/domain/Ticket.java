@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-
 public class Ticket implements Comparable<Ticket> {
     private int id;
     private int price;
