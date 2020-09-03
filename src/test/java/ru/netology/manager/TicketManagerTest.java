@@ -7,11 +7,11 @@ import ru.netology.repository.TicketRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TicketsManagerTest {
+class TicketManagerTest {
     private TicketRepository repository = new TicketRepository();
     private TicketManager manager = new TicketManager(repository);
-    private Ticket first = new Ticket(1, 7000, "OMS", "DME", 205);
-    private Ticket second = new Ticket(2, 10000, "OMS", "DME", 205);
+    private Ticket first = new Ticket(1, 10000, "OMS", "DME", 205);
+    private Ticket second = new Ticket(2, 7000, "OMS", "DME", 205);
     private Ticket third = new Ticket(3, 20000, "OMS", "LED", 205);
 
     @BeforeEach
@@ -42,7 +42,7 @@ class TicketsManagerTest {
         manager.ticketAdd(first);
         manager.ticketAdd(second);
         manager.ticketAdd(third);
-        Ticket[] expected = new Ticket[]{first, second};
+        Ticket[] expected = new Ticket[]{second, first};
         Ticket[] actual = manager.findAll("OMS", "DME");
         assertArrayEquals(expected, actual);
     }
